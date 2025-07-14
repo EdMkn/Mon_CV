@@ -3,8 +3,8 @@ import cvData from './cvData'
 
 const Experience = () => {
   return (
-    <div className="p-6">
-    <h2 className="text-2xl font-bold mb-4">Experience</h2>
+    <div className="space-y-4">
+    <h2 className="text-xl font-semibold border-b border-gray-300 pb-1">Experience</h2>
     {cvData.experience.map((job, index) => (
       <div key={index} className="mb-4">
         <h4 className="font-bold">{job.role} @ {job.company}</h4>

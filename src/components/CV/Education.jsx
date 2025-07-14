@@ -3,8 +3,8 @@ import cvData from './cvData'
 
 const Education = () => {
   return (
-    <div className="p-6">
-    <h2 className="text-2xl font-bold mb-4">Education</h2>
+    <div className="space-y-6">
+    <h2 className="text-xl font-semibold border-b border-gray-300 pb-1">Education</h2>
     {cvData.education.map((edu, index) => (
       <div key={index} className="mb-2">
         <h4 className="font-bold">{edu.degree}</h4>

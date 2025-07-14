@@ -1,5 +1,5 @@
 // src/components/CV/CV.jsx
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "./Header";
 import About from "./About";
 import Experience from "./Experience";
@@ -7,7 +7,20 @@ import Education from "./Education";
 import Skills from "./Skills";
 
 const CV = () => {
-  const [currentSection, setCurrentSection] = useState("About");
+  const [currentSection, setCurrentSection] = useState("A propos");
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => setDarkMode((prev) => !prev);
+
+  useEffect(() => {
+    const root = document.documentElement;
+    if (darkMode) {
+      root.classList.add("dark");
+    } else {
+      root.classList.remove("dark");
+    }
+  }, [darkMode]);
+
   const renderSection = () => {
     switch (currentSection) {
       case "Experiences":
@@ -22,9 +35,12 @@ const CV = () => {
   };
 
   return (
-    <div>
-      <Header currentSection={currentSection} onSelect={setCurrentSection} />
-      <div className="max-w-3xl mx-auto">{renderSection()}</div>
+    <div className="min-h-screen bg-gray-100 text-gray-900">
+      <Header 
+        currentSection={currentSection} 
+        onSelect={setCurrentSection}
+        toggleDarkMode={toggleDarkMode} />
+      <div className="transition-opacity duration-500 ease-in-out">{renderSection()}</div>
     </div>
   );
 };
