@@ -3,15 +3,19 @@ import cvData from "./cvData";
 
 const About = () => {
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 ">
       <div>
         <h1 className="text-3xl font-bold">{cvData.name}</h1>
         <h2 className="text-xl text-gray-600 dark:text-gray-300">
           {cvData.title}
         </h2>
       </div>
-
-      <p className="text-lg">{cvData.summary}</p>
+      
+      <div className="max-w-2xl text-justify text-gray-800">{cvData.summary.map((line,i) => (
+        <p key={i} className="mt-4">
+        {line}
+      </p>
+      ))}</div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
         <p>
