@@ -164,6 +164,7 @@ const cvData = {
     {
       degree: "Ingénieur informatique",
       institution: "ESIEA",
+      description: "Développement logiciel, architecture applicative, Qualité logiciel, Gestion de projets",
       period: "2020 - 2026",
     },
   ],

@@ -9,6 +9,7 @@ const Education = () => {
         <div key={index} className="mb-4">
           <h4 className="font-semibold text-lg text-gray-900 text-left">{edu.degree}</h4>
           <p className="text-sm text-gray-500 text-left">{edu.institution} | {edu.period}</p>
+          <p className='text-lg text-gray-900 text-left'>{edu.description}</p>
         </div>
       ))}
     </div>
