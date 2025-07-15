@@ -42,6 +42,10 @@ const cvData = {
       role: "Chef de projet technique junior",
       company: "Particulier pour le compte d'une association",
       period: "octobre 2022 - fevrier 2023",
+      images: [
+        "images/association-1.png",
+        "images/association-2.png"
+      ],
       description: [
         "Projet de réalisation d’un Proof of Concept (POC) d’une application mobile de vente en équipe, encadré par l’école.",
         "Objectif : livrer une application mobile avec 2 à 3 services fonctionnels et un backend fiable (Flutter).",
@@ -58,6 +62,8 @@ const cvData = {
       role: "Développeur frontend Angular/Ionic",
       company: "Association partenaire via l'école",
       period: "octobre 2021 - mars 2022",
+      images: [
+      ],
       description: [
         "Projet de refonte d’une plateforme web de gestion d’évènements pour une association.",
         "Premier contact avec Angular-Ionic, technologie apprise en binôme durant le projet.",
