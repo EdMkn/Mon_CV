@@ -76,6 +76,87 @@ const cvData = {
       ],
     },
   ],
+  personalProjects: [
+    {
+      name: "Projet_Calcul",
+      link: "https://github.com/EdMkn/Projet_Calcul",
+      duration: "2 semaines",
+      description: [
+        "Application web Java​",
+        "Quizz de questions mathématiques (Calcul mental)",
+        "Fait avec Eclipse et utilise TomCat comme serveur​",
+        "Configuration manuelle de la base de données et des tables​"
+      ],
+      images: [
+        "images/pjt_calcul-1.png",
+        "images/pjt_calcul-2.png",
+      ],
+    },
+    {
+      name: "BlackJack",
+      link: "https://github.com/EdMkn/BlackJack",
+      duration: "3 semaines",
+      description: [
+        "Application web Java​",
+        "Programme simulant le jeu de Black Jack",
+        "Implémentation de packages, de classes parentes et filles",
+        "Utilisation de modèles, de vues et de contrôleurs",
+      ],
+      images: [
+        "images/blackjack-1.png",
+        "images/blackjack-2.png",
+      ],
+    },
+    {
+      name: "Realisation d’un site de destination ",
+      link: "https://github.com/EdMkn/travel_agency",
+      duration: "3 semaines",
+      description: [
+        "Dans ce projet fait sur Java 17, ma contribution a été dans la réalisation de la \
+        partie backend d'une application web, qui renvoie à l'utilisateur une liste de \
+        destinations ayant un écart déterminé de températures avec le pays de départ",
+        "Tâches:",
+        "- Développement d'une API REST pour gérer les opérations liant les voyageurs, \
+        les pays de destinations, et les températures associées à ceux-ci",
+        "- Implémentation de la logique métier avec Spring Boot."
+      ],
+      images: [
+        "images/travel_agency-1.png",
+        "images/travel_agency-2.png",
+      ],
+    },
+    {
+      name: "Projets realisés en React ",
+      link: "https://github.com/EdMkn/little-projects",
+      duration: "2 semaines",
+      description: [
+        "Applications React réalisés dans le but de mieux se familiariser avec le framework React",
+        "Projets:",
+        "- WeatherApp: permet d'afficher les informations météo de la région",
+        "- TodoApp: permet de réaliser des tâches d'ajout, de modification et de suppression de tâches",
+        "Realisation de composants React, manipulation de Hooks useEffect, useState", 
+        "Réalisation d'API-REST"
+      ],
+      images: [
+        "images/lt_projects-1.png",
+        "images/lt_projects-2.png",
+      ],
+    },
+    {
+      name: "Travaux pratiques sur Docker ",
+      link: "https://github.com/EdMkn/TP-Docker \t \t https://github.com/EdMkn/Simple-Docker-Projects",
+      duration: "4 jours",
+      description: [
+        "Travaux pratiques sur la dockerisation d'applications web",
+        "- Mise en Place d'un Dockerfile",
+        "- Réalisation d'un docker-compose",
+        "Réalisation d'un registre privé", 
+      ],
+      images: [
+      ],
+    },
+
+  ],
   education: [
     {
       degree: "Ingénieur informatique",
@@ -85,6 +166,7 @@ const cvData = {
   ],
   skills: [
     "Concepts Cloud Computing",
+    "Cloud Digital Leader ",
     "Docker",
     "JavaScript",
     "ReactJS",

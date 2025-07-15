@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Header from "./Header";
 import About from "./About";
 import Experience from "./Experience";
+import PersonalExperiences from "./PersonalExperiences";
 import Education from "./Education";
 import Skills from "./Skills";
 
@@ -25,6 +26,8 @@ const CV = () => {
     switch (currentSection) {
       case "Experiences":
         return <Experience />;
+      case "Projets Personnels":
+        return <PersonalExperiences />;
       case "Educations":
         return <Education />;
       case "Competences":
