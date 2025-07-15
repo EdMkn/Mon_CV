@@ -16,7 +16,18 @@ const PersonalExperiences = () => {
                 {job.name}
               </h3>
               <p className="text-base font-medium text-gray-500 text-left mb-1">
-                {job.link}
+                {job.link.map((url, i) => (
+                  <div key={i}>
+                    <a
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 underline break-all"
+                    >
+                      {url}
+                    </a>
+                  </div>
+                ))}
               </p>
               <p className="text-sm italic text-gray-400 mb-2 text-left">
                 {job.duration}
@@ -64,7 +75,7 @@ const PersonalExperiences = () => {
             src={zoomedImg}
             alt="Zoomed project"
             className="max-w-full max-h-full rounded-lg shadow-lg"
-            onClick={e => e.stopPropagation()} // Prevent closing when clicking the image itself
+            onClick={(e) => e.stopPropagation()} // Prevent closing when clicking the image itself
           />
           <button
             className="absolute top-4 right-4 text-white text-3xl font-bold"

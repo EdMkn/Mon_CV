@@ -79,7 +79,7 @@ const cvData = {
   personalProjects: [
     {
       name: "Projet_Calcul",
-      link: "https://github.com/EdMkn/Projet_Calcul",
+      link: ["https://github.com/EdMkn/Projet_Calcul"],
       duration: "2 semaines",
       description: [
         "Application web Java​",
@@ -94,7 +94,7 @@ const cvData = {
     },
     {
       name: "BlackJack",
-      link: "https://github.com/EdMkn/BlackJack",
+      link: ["https://github.com/EdMkn/BlackJack"],
       duration: "3 semaines",
       description: [
         "Application web Java​",
@@ -109,7 +109,7 @@ const cvData = {
     },
     {
       name: "Realisation d’un site de destination ",
-      link: "https://github.com/EdMkn/travel_agency",
+      link: ["https://github.com/EdMkn/travel_agency"],
       duration: "3 semaines",
       description: [
         "Dans ce projet fait sur Java 17, ma contribution a été dans la réalisation de la \
@@ -127,7 +127,7 @@ const cvData = {
     },
     {
       name: "Projets realisés en React ",
-      link: "https://github.com/EdMkn/little-projects",
+      link: ["https://github.com/EdMkn/little-projects"],
       duration: "2 semaines",
       description: [
         "Applications React réalisés dans le but de mieux se familiariser avec le framework React",
@@ -144,7 +144,10 @@ const cvData = {
     },
     {
       name: "Travaux pratiques sur Docker ",
-      link: "https://github.com/EdMkn/TP-Docker \t \t https://github.com/EdMkn/Simple-Docker-Projects",
+      link: [
+        "https://github.com/EdMkn/TP-Docker",
+        "https://github.com/EdMkn/Simple-Docker-Projects"
+      ],
       duration: "4 jours",
       description: [
         "Travaux pratiques sur la dockerisation d'applications web",
