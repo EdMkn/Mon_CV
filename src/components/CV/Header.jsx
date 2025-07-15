@@ -1,7 +1,7 @@
 import React from "react";
 
 const Header = ({ currentSection, onSelect, toggleDarkMode }) => {
-  const sections = ["A propos", "Experiences", "Educations", "Competences"];
+  const sections = ["A propos", "Experiences", "Projets Personnels","Educations", "Competences"];
 
   return (
     <nav className="bg-primary text-white p-4 flex flex-wrap items-center justify-between">
