@@ -3,15 +3,15 @@ import cvData from './cvData'
 
 const Education = () => {
   return (
-    <div className="space-y-6">
-    <h2 className="text-xl font-semibold border-b border-gray-300 pb-1">Education</h2>
-    {cvData.education.map((edu, index) => (
-      <div key={index} className="mb-2">
-        <h4 className="font-bold">{edu.degree}</h4>
-        <p className="text-sm text-gray-500">{edu.institution} | {edu.period}</p>
-      </div>
-    ))}
-  </div>
+    <div className="space-y-8 bg-white/80 rounded-lg shadow p-8">
+      <h2 className="text-2xl font-bold border-b border-gray-200 pb-2 text-left mb-6">Education</h2>
+      {cvData.education.map((edu, index) => (
+        <div key={index} className="mb-4">
+          <h4 className="font-semibold text-lg text-gray-900 text-left">{edu.degree}</h4>
+          <p className="text-sm text-gray-500 text-left">{edu.institution} | {edu.period}</p>
+        </div>
+      ))}
+    </div>
   )
 }
 

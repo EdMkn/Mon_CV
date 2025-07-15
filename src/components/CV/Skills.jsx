@@ -2,11 +2,11 @@ import React from 'react'
 import cvData from "./cvData";
 
 const Skills = () => (
-  <div className="space-y-6">
-    <h2 className="text-xl font-semibold border-b border-gray-300 pb-1">Skills</h2>
+  <div className="space-y-8 bg-white/80 rounded-lg shadow p-8 ">
+    <h2 className="text-2xl font-bold border-b border-gray-200 pb-2 text-left mb-6">Skills</h2>
     <ul className="flex flex-wrap gap-3 text-sm">
       {cvData.skills.map((skill, index) => (
-        <li key={index} className="bg-gray-200 px-3 py-1 rounded-full">{skill}</li>
+        <li key={index} className="bg-blue-100 text-blue-800 px-4 py-1 rounded-full font-medium shadow-sm border border-blue-200">{skill}</li>
       ))}
     </ul>
   </div>

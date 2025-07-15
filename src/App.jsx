@@ -4,7 +4,7 @@ import CV from './components/CV/CV'
 function App() {
 
   return (
-    <div className="bg-white min-h-screen text-black">
+    <div className="min-h-screen">
       <CV/>
     </div>
   );
