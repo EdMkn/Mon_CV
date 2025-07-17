@@ -21,12 +21,14 @@ const Header = ({ currentSection, onSelect, toggleDarkMode }) => {
         ))}
       </div>
 
-      <button
+      {toggleDarkMode? "":""}
+      {/*<button
         onClick={toggleDarkMode}
+        hidden
         className="ml-auto text-sm px-3 py-1 border rounded hover:bg-blue-700"
       >
         🌙 Toggle Dark Mode
-      </button>
+      </button> */}
     </nav>
   );
 };
