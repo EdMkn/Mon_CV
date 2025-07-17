@@ -83,7 +83,8 @@ const cvData = {
       duration: "1 heure",
       description: [
         "La raison pour laquelle j'ai réalisé ce projet était pour me familiariser avec FastAPI, un framework web Python moderne et rapide (haute performance) pour construire des API.",
-        "Il s'agit d'une simple application web qui permet aux utilisateurs d'enregistrer des fruits. Le backend est construit avec FastAPI et fournit des endpoints pour ajouter et lister des fruits. Le frontend est construit avec React et interagit avec le backend pour afficher et enregistrer les fruits saisis par l'utilisateur."
+        "Il s'agit d'une simple application web qui permet aux utilisateurs d'enregistrer des fruits. Le backend est construit avec FastAPI et fournit des endpoints pour ajouter et lister des fruits. Le frontend est construit avec React et interagit avec le backend pour afficher et enregistrer les fruits saisis par l'utilisateur.",
+        "Un ficher docker-compose est inclus au projet afin de simuler l'architecture micro-services avec le frontend et le backend séparé"
       ],
       images: [
         "images/fruits-list-1.png",
