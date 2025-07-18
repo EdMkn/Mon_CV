@@ -23,7 +23,8 @@ const cvData = {
     education: "Formations",
     educationTitle: "Formations",
     skills: "Compétences",
-    skillsTitle:"Compétences"
+    skillsTitle:"Compétences",
+    experiencesfilter: "Filtrer par mot-clé (ex: React, Java, Docker...)"
   },
   experience: [
     {

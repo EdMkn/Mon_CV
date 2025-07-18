@@ -22,7 +22,7 @@ const PersonalExperiences = () => {
       </h2>
       <input
         type="text"
-        placeholder="Filtrer par mot-clé (ex: React, Java, Docker...)"
+        placeholder={cvData.sections.experiencesfilter}
         value={keyword}
         onChange={e => setKeyword(e.target.value)}
         className="mb-6 p-2 border rounded w-full"
