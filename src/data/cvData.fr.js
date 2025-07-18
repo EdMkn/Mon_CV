@@ -2,15 +2,23 @@ const cvData = {
   name: "Manyim MA (Edouard) MAKON",
   title: "Etudiant en génie logiciel BAC+5| Développeur React/Java ",
   image: "images/profile.png",
-  summary:[
+  summary: [
     "Je me considère avant tout comme un jeune développeur fullstack React/Java passionné.",
-    "Je vise à approfondir mes compétences en développement de logiciels, tout en m'impliquant activement dans les processus décisionnels."],
+    "Je vise à approfondir mes compétences en développement de logiciels, tout en m'impliquant activement dans les processus décisionnels.",
+  ],
   contact: {
     email: "nmaknyim@gmail.com",
     phone: "+33782306485",
     location: "Velizy, France",
     github: "https://github.com/EdMkn/",
     linkedin: "https://www.linkedin.com/in/mmmakon/",
+  },
+  sections: {
+    about:"A propos",
+    experiences: "Experiences",
+    projects: "Projets Personnels",
+    education: "Formations",
+    skills: "Competences",
   },
   experience: [
     {
@@ -24,7 +32,15 @@ const cvData = {
         "- Optimisation de la phase de packaging des plugins ICN (via Maven), afin d'accélérer les déploiements et d’en simplifier la maintenance",
         "- Contribution à l’élaboration et à la diffusion d’une formation sur l’ automatisation des tests fonctionnels, en utilisant Gherkin et Cucumber.",
       ],
-      keywords: ["React", "NextJS", "GED", "Maven", "Gherkin", "Cucumber", "Refactoring"],
+      keywords: [
+        "React",
+        "NextJS",
+        "GED",
+        "Maven",
+        "Gherkin",
+        "Cucumber",
+        "Refactoring",
+      ],
     },
     {
       role: "Stage Développeur Javascript",
@@ -39,16 +55,19 @@ const cvData = {
         "- Participation à des réunions hebdomadaires avec d’autres unités",
         "- Implémentation d’un endpoint dédié dans le cadre d’un projet de contrôle à distance.",
       ],
-      keywords: ["JavaScript", "BigQuery", "Data Studio", "Automation", "Endpoint"],
+      keywords: [
+        "JavaScript",
+        "BigQuery",
+        "Data Studio",
+        "Automation",
+        "Endpoint",
+      ],
     },
     {
       role: "Chef de projet technique junior",
       company: "Particulier pour le compte d'une association",
       period: "octobre 2022 - fevrier 2023",
-      images: [
-        "images/association-1.png",
-        "images/association-2.png"
-      ],
+      images: ["images/association-1.png", "images/association-2.png"],
       description: [
         "Projet de réalisation d’un Proof of Concept (POC) d’une application mobile de vente en équipe, encadré par l’école.",
         "Objectif : livrer une application mobile avec 2 à 3 services fonctionnels et un backend fiable (Flutter).",
@@ -66,8 +85,7 @@ const cvData = {
       role: "Développeur frontend Angular/Ionic",
       company: "Association partenaire via l'école",
       period: "octobre 2021 - mars 2022",
-      images: [
-      ],
+      images: [],
       description: [
         "Projet de refonte d’une plateforme web de gestion d’évènements pour une association.",
         "Premier contact avec Angular-Ionic, technologie apprise en binôme durant le projet.",
@@ -89,12 +107,9 @@ const cvData = {
       description: [
         "La raison pour laquelle j'ai réalisé ce projet était pour me familiariser avec FastAPI, un framework web Python moderne et rapide (haute performance) pour construire des API.",
         "Il s'agit d'une simple application web qui permet aux utilisateurs d'enregistrer des fruits. Le backend est construit avec FastAPI et fournit des endpoints pour ajouter et lister des fruits. Le frontend est construit avec React et interagit avec le backend pour afficher et enregistrer les fruits saisis par l'utilisateur.",
-        "Un ficher docker-compose est inclus au projet afin de simuler l'architecture micro-services avec le frontend et le backend séparé"
+        "Un ficher docker-compose est inclus au projet afin de simuler l'architecture micro-services avec le frontend et le backend séparé",
       ],
-      images: [
-        "images/fruits-list-1.png",
-        "images/fruits-list-2.png",
-      ],
+      images: ["images/fruits-list-1.png", "images/fruits-list-2.png"],
       keywords: ["FastAPI", "React", "Docker", "Microservices"],
     },
     {
@@ -105,12 +120,9 @@ const cvData = {
         "Application web Java​",
         "Quizz de questions mathématiques (Calcul mental)",
         "Fait avec Eclipse et utilise TomCat comme serveur​",
-        "Configuration manuelle de la base de données et des tables​"
+        "Configuration manuelle de la base de données et des tables​",
       ],
-      images: [
-        "images/pjt_calcul-1.png",
-        "images/pjt_calcul-2.png",
-      ],
+      images: ["images/pjt_calcul-1.png", "images/pjt_calcul-2.png"],
       keywords: ["Java", "Web", "Tomcat", "Database"],
     },
     {
@@ -123,10 +135,7 @@ const cvData = {
         "Implémentation de packages, de classes parentes et filles",
         "Utilisation de modèles, de vues et de contrôleurs",
       ],
-      images: [
-        "images/blackjack-1.png",
-        "images/blackjack-2.png",
-      ],
+      images: ["images/blackjack-1.png", "images/blackjack-2.png"],
       keywords: ["Java", "MVC", "Game"],
     },
     {
@@ -140,12 +149,9 @@ const cvData = {
         "Tâches:",
         "- Développement d'une API REST pour gérer les opérations liant les voyageurs, \
         les pays de destinations, et les températures associées à ceux-ci",
-        "- Implémentation de la logique métier avec Spring Boot."
+        "- Implémentation de la logique métier avec Spring Boot.",
       ],
-      images: [
-        "images/travel_agency-1.png",
-        "images/travel_agency-2.png",
-      ],
+      images: ["images/travel_agency-1.png", "images/travel_agency-2.png"],
       keywords: ["Java", "Spring Boot", "API REST"],
     },
     {
@@ -157,39 +163,35 @@ const cvData = {
         "Projets:",
         "- WeatherApp: permet d'afficher les informations météo de la région",
         "- TodoApp: permet de réaliser des tâches d'ajout, de modification et de suppression de tâches",
-        "Realisation de composants React, manipulation de Hooks useEffect, useState", 
-        "Réalisation d'API-REST"
+        "Realisation de composants React, manipulation de Hooks useEffect, useState",
+        "Réalisation d'API-REST",
       ],
-      images: [
-        "images/lt_projects-1.png",
-        "images/lt_projects-2.png",
-      ],
+      images: ["images/lt_projects-1.png", "images/lt_projects-2.png"],
       keywords: ["React", "API REST", "WeatherApp", "TodoApp"],
     },
     {
       name: "Travaux pratiques sur Docker ",
       link: [
         "https://github.com/EdMkn/TP-Docker",
-        "https://github.com/EdMkn/Simple-Docker-Projects"
+        "https://github.com/EdMkn/Simple-Docker-Projects",
       ],
       duration: "4 jours",
       description: [
         "Travaux pratiques sur la dockerisation d'applications web",
         "- Mise en Place d'un Dockerfile",
         "- Réalisation d'un docker-compose",
-        "Réalisation d'un registre privé", 
+        "Réalisation d'un registre privé",
       ],
-      images: [
-      ],
+      images: [],
       keywords: ["Docker", "DevOps"],
     },
-
   ],
   education: [
     {
       degree: "Ingénieur informatique",
       institution: "ESIEA",
-      description: "Développement logiciel, architecture applicative, Qualité logiciel, Gestion de projets",
+      description:
+        "Développement logiciel, architecture applicative, Qualité logiciel, Gestion de projets",
       period: "2020 - 2026",
     },
     {

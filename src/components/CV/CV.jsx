@@ -24,13 +24,13 @@ const CV = () => {
 
   const renderSection = () => {
     switch (currentSection) {
-      case "Experiences":
+      case "experiences":
         return <Experience />;
-      case "Projets Personnels":
+      case "projects":
         return <PersonalExperiences />;
-      case "Educations":
+      case "educations":
         return <Education />;
-      case "Competences":
+      case "skills":
         return <Skills />;
       default:
         return <About />;

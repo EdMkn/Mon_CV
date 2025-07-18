@@ -1,5 +1,7 @@
-import React, {useState} from "react";
+import React, {useState, useMemo} from "react";
 import { useLanguage } from "../../context/LanguageContext";
+import cvDataFr from "@data/cvData.fr";
+import cvDataEn from "@data/cvData.en";
 
 const LANGUAGES = [
   { code: "fr", label: "Français" },
@@ -10,7 +12,8 @@ const LANGUAGES = [
 const Header = ({ currentSection, onSelect, toggleDarkMode }) => {
   const { language, setLanguage } = useLanguage();
   const [open, setOpen] = useState(false);
-  const sections = ["A propos", "Experiences", "Projets Personnels","Educations", "Competences"];
+  const sections = ["about", "experiences", "projects","education", "skills"];
+  const sectionsLang = (useMemo(() => (language === "en" ? cvDataEn : cvDataFr), [language])).sections;
 
   return (
     <nav className="bg-primary text-white p-4 flex flex-wrap items-center justify-between">
@@ -25,7 +28,7 @@ const Header = ({ currentSection, onSelect, toggleDarkMode }) => {
                 : "text-blue-100"
             }`}
           >
-            {section}
+            {sectionsLang[section]}
           </button>
         ))}
       </div>
