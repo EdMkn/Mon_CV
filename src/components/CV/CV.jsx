@@ -28,7 +28,7 @@ const CV = () => {
         return <Experience />;
       case "projects":
         return <PersonalExperiences />;
-      case "educations":
+      case "education":
         return <Education />;
       case "skills":
         return <Skills />;
