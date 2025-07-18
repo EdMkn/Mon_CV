@@ -91,6 +91,7 @@ const cvData = {
         "images/fruits-list-1.png",
         "images/fruits-list-2.png",
       ],
+      keywords: ["FastAPI", "React", "Docker", "Microservices"],
     },
     {
       name: "Projet_Calcul",
@@ -106,6 +107,7 @@ const cvData = {
         "images/pjt_calcul-1.png",
         "images/pjt_calcul-2.png",
       ],
+      keywords: ["Java", "Web", "Tomcat", "Database"],
     },
     {
       name: "BlackJack",
@@ -121,6 +123,7 @@ const cvData = {
         "images/blackjack-1.png",
         "images/blackjack-2.png",
       ],
+      keywords: ["Java", "MVC", "Game"],
     },
     {
       name: "Realisation d’un site de destination ",
@@ -139,6 +142,7 @@ const cvData = {
         "images/travel_agency-1.png",
         "images/travel_agency-2.png",
       ],
+      keywords: ["Java", "Spring Boot", "API REST"],
     },
     {
       name: "Projets realisés en React ",
@@ -156,6 +160,7 @@ const cvData = {
         "images/lt_projects-1.png",
         "images/lt_projects-2.png",
       ],
+      keywords: ["React", "API REST", "WeatherApp", "TodoApp"],
     },
     {
       name: "Travaux pratiques sur Docker ",
@@ -172,6 +177,7 @@ const cvData = {
       ],
       images: [
       ],
+      keywords: ["Docker", "DevOps"],
     },
 
   ],
