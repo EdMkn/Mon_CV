@@ -1,5 +1,5 @@
 import React from 'react'
-import cvData from "./cvData";
+import cvData from "@data/cvData";
 
 const Skills = () => (
   <div className="space-y-8 bg-white/80 rounded-lg shadow p-8 ">

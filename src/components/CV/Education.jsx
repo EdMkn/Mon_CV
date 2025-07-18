@@ -1,5 +1,5 @@
 import React from 'react'
-import cvData from './cvData'
+import cvData from '@data/cvData'
 
 const Education = () => {
   return (
