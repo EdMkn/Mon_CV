@@ -15,10 +15,15 @@ const cvData = {
   },
   sections: {
     about:"A propos",
+    aboutTitles: "",
     experiences: "Experiences",
+    experiencesTitle: "Experiences professionnelles",
     projects: "Projets Personnels",
+    projectsTitle: "Projets personnels et académiques",
     education: "Formations",
-    skills: "Competences",
+    educationTitle: "Formations",
+    skills: "Compétences",
+    skillsTitle:"Compétences"
   },
   experience: [
     {

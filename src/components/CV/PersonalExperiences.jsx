@@ -18,7 +18,7 @@ const PersonalExperiences = () => {
   return (
     <div className="space-y-8 bg-white/80 rounded-lg shadow p-8">
       <h2 className="text-2xl font-bold border-b border-gray-200 pb-2 text-left mb-6">
-        Projets personnels et académiques
+        {cvData.sections.projectsTitle  }
       </h2>
       <input
         type="text"
