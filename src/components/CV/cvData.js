@@ -1,6 +1,7 @@
 const cvData = {
   name: "Manyim MA (Edouard) MAKON",
   title: "Etudiant en génie logiciel BAC+5| Développeur React/Java ",
+  image: "images/profile.png",
   summary:[
     "Je me considère avant tout comme un jeune développeur fullstack React/Java passionné.",
     "Je vise à approfondir mes compétences en développement de logiciels, tout en m'impliquant activement dans les processus décisionnels."],

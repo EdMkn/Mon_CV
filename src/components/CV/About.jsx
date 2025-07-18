@@ -7,7 +7,7 @@ const About = () => {
       <div className="space-y-8 bg-white/80 rounded-lg shadow p-8 ">
         <div className="mb-4 flex flex-col sm:flex-row items-center sm:items-start gap-6">
           <img
-            src={"/images/profile.png"}
+            src={cvData.image}
             alt="Photo de profil de Manyim MA MAKON (Edouard)"
             className="w-28 h-28 rounded-full object-cover shadow-lg border-4 border-primary"
           />
