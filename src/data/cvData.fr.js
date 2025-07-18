@@ -192,6 +192,12 @@ const cvData = {
       description: "Développement logiciel, architecture applicative, Qualité logiciel, Gestion de projets",
       period: "2020 - 2026",
     },
+    {
+      degree: "Classes Preparatoires MPSI",
+      institution: "Prepavogt - Cameroun",
+      description: "Mathématiques, Physiques, Sciences de l'ingénieur",
+      period: "2014 - 2016",
+    },
   ],
   skills: [
     "Concepts Cloud Computing",

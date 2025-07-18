@@ -189,6 +189,12 @@ const cvData = {
       description: "Software development, application architecture, software quality, project management",
       period: "2020 - 2026",
     },
+    {
+      degree: "Preparatory Classes for French Grandes Écoles – MPSI track",
+      institution: "Prepavogt - Cameroun",
+      description: "Mathematics, Physics, and Engineering Sciences",
+      period: "2014 - 2016",
+    },
   ],
   skills: [
     "Cloud Computing Concepts",
