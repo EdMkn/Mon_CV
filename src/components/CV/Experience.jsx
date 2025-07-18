@@ -1,9 +1,16 @@
-import React, { useState } from "react";
-import cvData from "@data/cvData";
+import React, { useState, useMemo } from "react";
+import { useLanguage } from "../../context/LanguageContext";
+import cvDataFr from "@data/cvData.fr";
+import cvDataEn from "@data/cvData.en";
+
 
 const Experience = () => {
   const [zoomedImg, setZoomedImg] = useState(null);
   const [keyword, setKeyword] = useState("");
+
+  const { language } = useLanguage();
+  const cvData = useMemo(() => (language === "en" ? cvDataEn : cvDataFr), [language]);
+  
   const filteredExperiences = keyword.trim()
     ? cvData.experience.filter(exp =>
         exp.keywords && exp.keywords.some(k => k.toLowerCase().includes(keyword.toLowerCase()))

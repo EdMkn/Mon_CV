@@ -1,7 +1,11 @@
-import React from "react";
-import cvData from "@data/cvData";
+import React, { useMemo } from "react";
+import { useLanguage } from "../../context/LanguageContext";
+import cvDataFr from "@data/cvData.fr";
+import cvDataEn from "@data/cvData.en";
 
 const About = () => {
+  const { language } = useLanguage();
+  const cvData = useMemo(() => (language === "en" ? cvDataEn : cvDataFr), [language]);
   return (
     <>
       <div className="space-y-8 bg-white/80 rounded-lg shadow p-8 ">
