@@ -3,7 +3,7 @@ const cvData = {
   title: "Etudiant en génie logiciel BAC+5| Développeur React/Java ",
   summary:[
     "Je me considère avant tout comme un jeune développeur fullstack React/Java passionné.",
-    "Je souhaite dans le cadre d' un stage de fin d'études de 6 mois approfondir mes compétences en développement de logiciels, tout en m'impliquant activement dans les processus décisionnels."],
+    "Je vise à approfondir mes compétences en développement de logiciels, tout en m'impliquant activement dans les processus décisionnels."],
   contact: {
     email: "nmaknyim@gmail.com",
     phone: "+33782306485",
