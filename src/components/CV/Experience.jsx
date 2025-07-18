@@ -40,7 +40,7 @@ const Experience = () => {
                     <img
                       key={i}
                       src={img}
-                      alt={`Screenshot ${i + 1} for ${job.role} at ${job.company}`}
+                      alt={`Photo ${i + 1} pour ${job.role} à ${job.company}`}
                       className="w-64 h-40 object-cover rounded-lg shadow border"
                       onClick={() => setZoomedImg(`${img}`)}
                     />
