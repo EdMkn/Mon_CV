@@ -24,6 +24,7 @@ const cvData = {
         "- Optimisation de la phase de packaging des plugins ICN (via Maven), afin d'accélérer les déploiements et d’en simplifier la maintenance",
         "- Contribution à l’élaboration et à la diffusion d’une formation sur l’ automatisation des tests fonctionnels, en utilisant Gherkin et Cucumber.",
       ],
+      keywords: ["React", "NextJS", "GED", "Maven", "Gherkin", "Cucumber", "Refactoring"],
     },
     {
       role: "Stage Développeur Javascript",
@@ -38,6 +39,7 @@ const cvData = {
         "- Participation à des réunions hebdomadaires avec d’autres unités",
         "- Implémentation d’un endpoint dédié dans le cadre d’un projet de contrôle à distance.",
       ],
+      keywords: ["JavaScript", "BigQuery", "Data Studio", "Automation", "Endpoint"],
     },
     {
       role: "Chef de projet technique junior",
@@ -58,6 +60,7 @@ const cvData = {
         "- Développement du backend sur Flutter.",
         "Projet livré avec succès malgré des difficultés techniques initiales.",
       ],
+      keywords: ["Flutter", "Backend", "Wireframes", "Planning", "POC"],
     },
     {
       role: "Développeur frontend Angular/Ionic",
@@ -75,6 +78,7 @@ const cvData = {
         "- Développement des modules d’ajout et de modification d’évènements.",
         "Projet livré fonctionnel selon le cahier des charges, à l’exception de la connexion Facebook.",
       ],
+      keywords: ["Angular", "Ionic", "Frontend", "Meetings"],
     },
   ],
   personalProjects: [

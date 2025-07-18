@@ -3,13 +3,26 @@ import cvData from "./cvData";
 
 const Experience = () => {
   const [zoomedImg, setZoomedImg] = useState(null);
+  const [keyword, setKeyword] = useState("");
+  const filteredExperiences = keyword.trim()
+    ? cvData.experience.filter(exp =>
+        exp.keywords && exp.keywords.some(k => k.toLowerCase().includes(keyword.toLowerCase()))
+      )
+    : cvData.experience;
   return (
     <div className="space-y-8 bg-white/80 rounded-lg shadow p-8">
       <h2 className="text-2xl font-bold border-b border-gray-200 pb-2 text-left mb-6">
         Experiences professionnelles
       </h2>
-      <div className="flex flex-col">
-        {cvData.experience.map((job, index) => {
+      <input
+        type="text"
+        placeholder="Filtrer par mot-clé (ex: React, Java, Docker...)"
+        value={keyword}
+        onChange={e => setKeyword(e.target.value)}
+        className="mb-6 p-2 border rounded w-full"
+      />
+      <div className={keyword ? "grid grid-cols-1 md:grid-cols-2 gap-6" : "flex flex-col"}>
+        {filteredExperiences.map((job, index) => {
           return (
             <div key={index} className="mb-8">
               <h3 className="text-2xl font-extrabold text-gray-900 text-left mb-1">
@@ -22,14 +35,12 @@ const Experience = () => {
                 {job.period}
               </p>
               {job.images && job.images.length > 0 && (
-                <div className="flex gap-4 overflow-x-auto mb-4">
+                <div className={keyword ? "grid grid-cols-1 md:grid-cols-2 gap-6" : "flex gap-4 overflow-x-auto mb-4"}>
                   {job.images.map((img, i) => (
                     <img
                       key={i}
                       src={img}
-                      alt={`Screenshot ${i + 1} for ${job.role} at ${
-                        job.company
-                      }`}
+                      alt={`Screenshot ${i + 1} for ${job.role} at ${job.company}`}
                       className="w-64 h-40 object-cover rounded-lg shadow border"
                       onClick={() => setZoomedImg(`${img}`)}
                     />
@@ -52,6 +63,15 @@ const Experience = () => {
                     );
                 })}
               </ul>
+              {job.keywords && (
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {job.keywords.map((kw, i) => (
+                    <span key={i} className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">
+                      {kw}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
           );
         })}
