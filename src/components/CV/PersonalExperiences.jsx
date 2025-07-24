@@ -28,7 +28,9 @@ const PersonalExperiences = () => {
         className="mb-6 p-2 border rounded w-full"
       />
       <div className={keyword?"grid grid-cols-1 md:grid-cols-2 gap-6":"flex flex-col"}>
-        {filteredProjects.map((job, index) => {
+        {filteredProjects
+        .sort((job1, job2) => job1.name.localeCompare(job2.name))
+        .map((job, index) => {
           return (
             <div key={index} className="mb-8">
               <h3 className="text-2xl font-extrabold text-gray-900 text-left mb-1">
