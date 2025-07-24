@@ -191,6 +191,50 @@ const cvData = {
       images: [],
       keywords: ["Docker", "DevOps"],
     },
+    {
+      name: "WebScraper ",
+      link: [
+        "https://github.com/EdMkn/WebScraper",
+      ],
+      duration: "1 jour",
+      description: [
+        "Un projet en C# pour scrapper les données de produits depuis un site e-commerce (ex: books.toscrape.com), \
+        paginer les résultats, les sauvegarder dans une base de données SQLite, et les exporter en JSON",
+      ],
+      images: ["images/scraper-1.png", "images/scraper-2.png"],
+      keywords: ["C#", "WebScraper", ".NET 7+", "Microsoft.Extensions.DependencyInjection"],
+    },
+    {
+      name: "BookApp",
+      link: [
+        "https://github.com/EdMkn/simple-console-apps",
+      ],
+      duration: "2 jours",
+      description: [
+        "Une application web de gestion de livres qui combine :",
+        "- Un frontend MVC avec Razor Views",
+        "- Une API RESTful pour interagir avec les données",
+        "- Swagger pour tester les endpoints",
+        "- Stockage en mémoire (pour l’instant)",
+      ],
+      images: ["images/book-app-1.png", "images/book-app-2.png", "images/book-app-3.png", "images/book-app-4.png", "images/book-app-5.png"],
+      keywords: ["C#", "Book Manager", ".NET 8", "Razor Pages", "Swagger", "ASP.NET Core MVC", "ApiController"],
+    },
+    {
+      name: "ImageViewerMVC",
+      link: [
+        "https://github.com/EdMkn/simple-console-apps",
+      ],
+      duration: "2 jours",
+      description: [
+        "Une petite application de bureau écrite en C# avec \
+        GTK# pour Linux, organisée selon le modèle MVC.",
+        "Elle permet de parcourir les images d’un dossier \
+        local (formats pris en charge : `.jpg`, `.png`, `.bmp`).",
+      ],
+      images: ["images/image-viewer-1.png", "images/image-viewer-2.png", "images/image-viewer-3.png"],
+      keywords: ["C#", "Image Viewer", ".NET 8", "Mono", "GTK# 3"],
+    }
   ],
   education: [
     {
