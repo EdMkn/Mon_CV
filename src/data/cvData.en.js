@@ -233,7 +233,50 @@ const cvData = {
       ],
       images: ["images/image-viewer-1.png", "images/image-viewer-2.png", "images/image-viewer-3.png"],
       keywords: ["C#", "Image Viewer", ".NET 8", "Mono", "GTK# 3"],
-    }
+    },
+    {
+      name: "TodoMobileApp",
+      link: [
+        "https://github.com/EdMkn/TodoSyncApp",
+      ],
+      duration: "1 day",
+      description: [
+        "A mobile app to manage tasks with a modern UI and robust task management logic.",
+        "It allows to create, edit and delete tasks, and to synchronize them with a server.",
+        "It is developed on Android, and is written in Kotlin and uses Room to store data.",
+      ],
+      images: ["images/todo_mobile-1.png"],
+      keywords: ["Kotlin", "Android", "MVVM", "RecyclerView", "TodoSyncApp", "Room", "Retrofit"],
+    },
+    {
+      name: "WeatherMobileApp",
+      link: [
+        "https://github.com/EdMkn/My_Weather_App",
+      ],
+      duration: "2 days",
+      description: [
+        "A weather app with real-time forecasts using the OpenWeatherMap API.",
+        "It allows to display weather information for the region.",
+        "It also allows to view weather forecasts for the next 5 days.",
+      ],
+      images: ["images/weather_app-1.png"],
+      keywords: ["Kotlin", "Android", "MVVM", "GSON", "WeatherApp", "Coroutines", "Retrofit", "viewBinding", "PlayServices Location"],
+    },
+    {
+      name: "QR Code Mobile App",
+      link: [
+        "https://github.com/EdMkn/QRScanner",
+      ],
+      duration: "3 days",
+      description: [
+        "A mobile app to manage QR codes.",
+        "It allows to scan QR codes and store them in an SQLite database.",
+        "It also allows to generate QR codes.",
+      ],
+      images: ["images/qr_scan-1.png", "images/qr_scan-2.png", "images/qr_scan-3.png", "images/qr_scan-4.png", "images/qr_scan-5.png"],
+      keywords: ["Kotlin", "CameraX", "RecyclerView", "ML Kit Barcode Scanner", "Zxing"],
+    },
+    
   ],
   education: [
     {
