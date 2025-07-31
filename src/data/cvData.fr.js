@@ -13,19 +13,7 @@ const cvData = {
     github: "https://github.com/EdMkn/",
     linkedin: "https://www.linkedin.com/in/mmmakon/",
   },
-  sections: {
-    about:"A propos",
-    aboutTitles: "",
-    experiences: "Experiences",
-    experiencesTitle: "Experiences professionnelles",
-    projects: "Projets Personnels",
-    projectsTitle: "Projets personnels et académiques",
-    education: "Formations",
-    educationTitle: "Formations",
-    skills: "Compétences",
-    skillsTitle:"Compétences",
-    experiencesfilter: "Filtrer par mot-clé (ex: React, Java, Docker...)"
-  },
+
   experience: [
     {
       role: "Stage développeur React/NextJS",
@@ -234,7 +222,49 @@ const cvData = {
       ],
       images: ["images/image-viewer-1.png", "images/image-viewer-2.png", "images/image-viewer-3.png"],
       keywords: ["C#", "Image Viewer", ".NET 8", "Mono", "GTK# 3"],
-    }
+    },
+    {
+      name: "TodoMobileApp",
+      link: [
+        "https://github.com/EdMkn/TodoSyncApp",
+      ],
+      duration: "1 jour",
+      description: [
+        "Une application mobile de gestion de tâches avec une interface utilisateur moderne et une logique de gestion des tâches robuste.",
+        "Elle permet de créer, modifier et supprimer des tâches, et de les synchroniser avec un serveur.",
+        "Elle est développée sur Android, et est écrite en Kotlin et utilise Room pour stocker les données.",
+      ],
+      images: ["images/todo_mobile-1.png"],
+      keywords: ["Kotlin", "Android", "MVVM", "RecyclerView", "TodoSyncApp", "Room", "Retrofit"],
+    },
+    {
+      name: "WeatherMobileApp",
+      link: [
+        "https://github.com/EdMkn/My_Weather_App",
+      ],
+      duration: "2 jours",
+      description: [
+        "Une application météo Android avec prévisions en temps réel utilisant l'API OpenWeatherMap.",
+        "Elle permet d'afficher les informations météo de la région.",
+        "Elle permet également de consulter les prévisions météo pour les 5 prochains jours.",
+      ],
+      images: ["images/weather_app-1.png"],
+      keywords: ["Kotlin", "Android", "MVVM", "GSON", "WeatherApp", "Coroutines", "Retrofit", "viewBinding", "PlayServices Location"],
+    },
+    {
+      name: "QR Code Mobile App",
+      link: [
+        "https://github.com/EdMkn/QRScanner",
+      ],
+      duration: "3 jours",
+      description: [
+        "Une application mobile de gestion de QR codes.",
+        "Elle permet de scanner des QR codes et de les stocker dans une base de données SQLite.",
+        "Elle permet également de générer des QR codes.",
+      ],
+      images: ["images/qr_scan-1.png", "images/qr_scan-2.png", "images/qr_scan-3.png", "images/qr_scan-4.png", "images/qr_scan-5.png"],
+      keywords: ["Kotlin", "CameraX", "RecyclerView", "ML Kit Barcode Scanner", "Zxing"],
+    },
   ],
   education: [
     {

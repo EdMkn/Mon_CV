@@ -1,7 +1,7 @@
 import React, {useState, useMemo} from "react";
 import { useLanguage } from "../../context/LanguageContext";
-import cvDataFr from "@data/cvData.fr";
-import cvDataEn from "@data/cvData.en";
+import sectionsFr from "@data/sections.fr";
+import sectionsEn from "@data/sections.en";
 
 const LANGUAGES = [
   { code: "fr", label: "Français" },
@@ -13,7 +13,7 @@ const Header = ({ currentSection, onSelect, toggleDarkMode }) => {
   const { language, setLanguage } = useLanguage();
   const [open, setOpen] = useState(false);
   const sections = ["about", "experiences", "projects","education", "skills"];
-  const sectionsLang = (useMemo(() => (language === "en" ? cvDataEn : cvDataFr), [language])).sections;
+  const sectionsLang = useMemo(() => (language === "en" ? sectionsEn : sectionsFr), [language]);
 
   return (
     <nav className="bg-primary text-white p-4 flex flex-wrap items-center justify-between">
