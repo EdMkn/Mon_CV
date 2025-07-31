@@ -2,14 +2,15 @@ import React, { useState, useMemo } from "react";
 import { useLanguage } from "../../context/LanguageContext";
 import cvDataFr from "@data/cvData.fr";
 import cvDataEn from "@data/cvData.en";
-
+import sectionsFr from "@data/sections.fr";
+import sectionsEn from "@data/sections.en";
 const PersonalExperiences = () => {
   const [zoomedImg, setZoomedImg] = useState(null);
   const [keyword, setKeyword] = useState("");
 
   const { language } = useLanguage();
   const cvData = useMemo(() => (language === "en" ? cvDataEn : cvDataFr), [language]);
-  
+  const sections = useMemo(() => (language === "en" ? sectionsEn : sectionsFr), [language]);
   const filteredProjects = keyword.trim()
     ? cvData.personalProjects.filter(project =>
         project.keywords && project.keywords.some(k => k.toLowerCase().includes(keyword.toLowerCase()))
@@ -18,11 +19,11 @@ const PersonalExperiences = () => {
   return (
     <div className="space-y-8 bg-white/80 rounded-lg shadow p-8">
       <h2 className="text-2xl font-bold border-b border-gray-200 pb-2 text-left mb-6">
-        {cvData.sections.projectsTitle  }
+        {sections.projectsTitle}
       </h2>
       <input
         type="text"
-        placeholder={cvData.sections.experiencesfilter}
+        placeholder={sections.experiencesfilter}
         value={keyword}
         onChange={e => setKeyword(e.target.value)}
         className="mb-6 p-2 border rounded w-full"

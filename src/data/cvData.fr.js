@@ -13,19 +13,7 @@ const cvData = {
     github: "https://github.com/EdMkn/",
     linkedin: "https://www.linkedin.com/in/mmmakon/",
   },
-  sections: {
-    about:"A propos",
-    aboutTitles: "",
-    experiences: "Experiences",
-    experiencesTitle: "Experiences professionnelles",
-    projects: "Projets Personnels",
-    projectsTitle: "Projets personnels et académiques",
-    education: "Formations",
-    educationTitle: "Formations",
-    skills: "Compétences",
-    skillsTitle:"Compétences",
-    experiencesfilter: "Filtrer par mot-clé (ex: React, Java, Docker...)"
-  },
+
   experience: [
     {
       role: "Stage développeur React/NextJS",

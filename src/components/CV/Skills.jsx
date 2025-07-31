@@ -2,18 +2,20 @@ import React, {useMemo} from "react";
 import { useLanguage } from "../../context/LanguageContext";
 import cvDataFr from "@data/cvData.fr";
 import cvDataEn from "@data/cvData.en";
-
+import sectionsFr from "@data/sections.fr";
+import sectionsEn from "@data/sections.en";
 const Skills = () => {
   const { language } = useLanguage();
   const cvData = useMemo(
     () => (language === "en" ? cvDataEn : cvDataFr),
     [language]
   );
+  const sections = useMemo(() => (language === "en" ? sectionsEn : sectionsFr), [language]);
   return(
   <>
     <div className="space-y-8 bg-white/80 rounded-lg shadow p-8 ">
       <h2 className="text-2xl font-bold border-b border-gray-200 pb-2 text-left mb-6">
-        {cvData.sections.skillsTitle}
+        {sections.skillsTitle}
       </h2>
       <ul className="flex flex-wrap gap-3 text-sm">
         {cvData.skills.map((skill, index) => (

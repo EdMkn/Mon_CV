@@ -13,19 +13,7 @@ const cvData = {
     github: "https://github.com/EdMkn/",
     linkedin: "https://www.linkedin.com/in/mmmakon/",
   },
-  sections: {
-    about:"About",
-    aboutTitles: "",
-    experiences: "Experiences",
-    experiencesTitle: "Professional Experiences",
-    projects: "Personal Projects",
-    projectsTitle: "Personal and Academic Projects",
-    education: "Formations",
-    educationTitle: "Formations",
-    skills: "Skills",
-    skillsTitle:"Skills",
-    experiencesfilter: "Filter by keyword (ex: React, Java, Docker...)"
-  },
+
 
   experience: [
     {
