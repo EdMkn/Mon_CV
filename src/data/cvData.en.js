@@ -282,16 +282,38 @@ const cvData = {
     },
   ],
   skills: [
-    "Cloud Computing Concepts",
-    "Cloud Digital Leader ",
-    "Docker",
-    "JavaScript",
-    "ReactJS",
-    "Python",
-    "Java",
-    "Flask",
-    "PostGreSQL",
-    "MySQL",
+    {
+      name: "Cloud Computing Concepts"
+    },
+    {
+      name: "Cloud Digital Leader",
+      type: "certification",
+      link: "https://www.credly.com/badges/af2cf0d5-a395-4f96-bb03-524f631ae37e"
+    },
+    {
+      name: "Docker"
+    },
+    {
+      name: "JavaScript"
+    },
+    {
+      name: "ReactJS"
+    },
+    {
+      name: "Python"
+    },
+    {
+      name: "Java"
+    },
+    {
+      name: "Flask"
+    },
+    {
+      name: "PostgreSQL"
+    },
+    {
+      name: "MySQL"
+    },
   ],
 };
 
