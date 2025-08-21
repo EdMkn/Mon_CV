@@ -87,7 +87,7 @@ const Experience = () => {
       {/* Zoomed image overlay */}
       {zoomedImg && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 cursor-zoom-out"
+          className="fixed inset-0 backdrop-blur-md flex items-center justify-center z-50 cursor-zoom-out"
           onClick={() => setZoomedImg(null)}
         >
           <img
@@ -97,11 +97,24 @@ const Experience = () => {
             onClick={e => e.stopPropagation()} // Prevent closing when clicking the image itself
           />
           <button
-            className="absolute top-4 right-4 text-white text-3xl font-bold"
+            className="absolute top-4 right-4 text-yellow-300 hover:text-red-300 transition-all duration-200 p-3 rounded-full bg-red-600 hover:bg-red-700 shadow-lg border-2 border-white hover:scale-110"
             onClick={() => setZoomedImg(null)}
             aria-label="Close"
           >
-            &times;
+            <svg 
+              className="w-8 h-8" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={3} 
+                d="M6 18L18 6M6 6l12 12" 
+              />
+            </svg>
           </button>
         </div>
       )}
