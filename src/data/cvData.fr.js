@@ -265,6 +265,21 @@ const cvData = {
       images: ["images/qr_scan-1.png", "images/qr_scan-2.png", "images/qr_scan-3.png", "images/qr_scan-4.png", "images/qr_scan-5.png"],
       keywords: ["Kotlin", "CameraX", "RecyclerView", "ML Kit Barcode Scanner", "Zxing"],
     },
+    {
+      name: "Vinyle Record Store",
+      link: [
+        "https://github.com/EdMkn/Music-Album-Store",
+      ],
+      duration: "3 semaines",
+      description: [
+        "Une plateforme de e-commerce moderne pour les enthousiastes de vinyles. Le thème est personnalisable",
+        "Elle permet de :",
+        "- Acheter des vinyls",
+        "- Gérer son panier et ses commandes",
+      ],
+      images: ["images/vinyle-1.png", "images/vinyle-2.png", "images/vinyle-3.png", "images/vinyle-4.png", "images/vinyle-5.png"],
+      keywords: ["Angular 19", "NestJS", "GraphQL", "Prisma", "PostgreSQL", "JWT", "Bcrypt", "Stripe", "Docker"],
+    },
   ],
   education: [
     {
@@ -282,16 +297,38 @@ const cvData = {
     },
   ],
   skills: [
-    "Concepts Cloud Computing",
-    "Cloud Digital Leader ",
-    "Docker",
-    "JavaScript",
-    "ReactJS",
-    "Python",
-    "Java",
-    "Flask",
-    "PostGreSQL",
-    "MySQL",
+    {
+      name: "Concepts Cloud Computing"
+    },
+    {
+      name: "Cloud Digital Leader",
+      type: "certification",
+      link: "https://www.credly.com/badges/af2cf0d5-a395-4f96-bb03-524f631ae37e"
+    },
+    {
+      name: "Docker"
+    },
+    {
+      name: "JavaScript"
+    },
+    {
+      name: "ReactJS"
+    },
+    {
+      name: "Python"
+    },
+    {
+      name: "Java"
+    },
+    {
+      name: "Flask"
+    },
+    {
+      name: "PostgreSQL"
+    },
+    {
+      name: "MySQL"
+    },
   ],
 };
 
