@@ -265,6 +265,21 @@ const cvData = {
       keywords: ["Kotlin", "CameraX", "RecyclerView", "ML Kit Barcode Scanner", "Zxing"],
     },
     
+    {
+      name: "Vinyle Record Store",
+      link: [
+        "https://github.com/EdMkn/Music-Album-Store",
+      ],
+      duration: "3 weeks",
+      description: [
+        "A modern e-commerce platform for vinyl enthusiasts. The theme is customizable.",
+        "It allows to :",
+        "- Buy vinyls",
+        "- Manage your cart and orders",
+      ],
+      images: ["images/vinyle-1.png", "images/vinyle-2.png", "images/vinyle-3.png", "images/vinyle-4.png", "images/vinyle-5.png"],
+      keywords: ["Angular 19", "NestJS", "GraphQL", "Prisma", "PostgreSQL", "JWT", "Bcrypt", "Stripe", "Docker"],
+    },
   ],
   education: [
     {
