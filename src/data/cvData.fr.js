@@ -278,7 +278,7 @@ const cvData = {
         "- Gérer son panier et ses commandes",
       ],
       images: ["images/vinyle-1.png", "images/vinyle-2.png", "images/vinyle-3.png", "images/vinyle-4.png", "images/vinyle-5.png"],
-      keywords: ["Angular 19", "NestJS", "GraphQL", "Prisma", "PostgreSQL", "JWT", "Bcrypt", "Stripe", "Docker"],
+      keywords: ["Angular 19", "NestJS", "GraphQL", "Prisma", "PostgreSQL", "Stripe", "Docker"],
     },
   ],
   education: [
