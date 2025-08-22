@@ -13,7 +13,7 @@ const Skills = () => {
   const sections = useMemo(() => (language === "en" ? sectionsEn : sectionsFr), [language]);
   return(
   <>
-    <div className="space-y-8 bg-white/80 rounded-lg shadow p-8 ">
+    <div className="space-y-8 bg-white rounded-xl shadow-xl p-10 border border-gray-100">
       <h2 className="text-2xl font-bold border-b border-gray-200 pb-2 text-left mb-6">
         {sections.skillsTitle}
       </h2>

@@ -1,6 +1,7 @@
 const sections = {
   about: "About",
   aboutTitles: "",
+  contactInformation: "Contact Information",
   experiences: "Experiences",
   experiencesTitle: "Professional Experiences",
   projects: "Personal Projects",
