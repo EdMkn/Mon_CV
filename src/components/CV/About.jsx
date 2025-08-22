@@ -11,7 +11,7 @@ const About = () => {
   const sections = useMemo(() => (language === "en" ? sectionsEn : sectionsFr), [language]);
   
   return (
-    <div className="space-y-12 bg-gradient-to-br from-white/90 to-gray-50/90 rounded-xl shadow-xl p-10 border border-gray-100">
+    <div className="space-y-8 bg-gradient-to-br from-white/90 to-gray-50/90 rounded-xl shadow-xl p-10 border border-gray-100">
       {/* Header Section with Profile */}
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 mb-8">
         <div className="relative">
@@ -43,7 +43,7 @@ const About = () => {
       </div>
 
       {/* Contact Information */}
-      <div className="bg-white/60 rounded-lg p-6 shadow-inner border border-gray-200 mt-16">
+      <div className="bg-white/60 rounded-lg p-6 shadow-inner border border-gray-200">
                  <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center">{sections.contactInformation}</h3>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
