@@ -3,8 +3,9 @@ const cvData = {
   title: "Etudiant en génie logiciel BAC+5| Développeur React/Java ",
   image: "images/profile.png",
   summary: [
-    "Je me considère avant tout comme un jeune développeur fullstack React/Java passionné.",
-    "Je vise à approfondir mes compétences en développement de logiciels, tout en m'impliquant activement dans les processus décisionnels.",
+    "Développeur fullstack React/Java en formation d'ingénieur, spécialisé dans la création de solutions web modernes et scalables.",
+    "Expérience confirmée en refactorisation de code, optimisation de performances et automatisation de processus.",
+    "Passionné par les technologies émergentes et l'architecture logicielle, je cherche à allier excellence technique et impact métier dans chaque projet.",
   ],
   contact: {
     email: "nmaknyim@gmail.com",

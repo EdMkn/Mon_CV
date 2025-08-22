@@ -3,8 +3,9 @@ const cvData = {
   title: "Software Engineering Student (Master's) | React/Java Developer",
   image: "images/profile.png",
   summary: [
-    "I consider myself first and foremost a passionate fullstack React/Java developer.",
-    "I aim to deepen my software development skills while actively engaging in decision-making processes.",
+    "Fullstack React/Java developer in software engineering training, specializing in creating modern and scalable web solutions.",
+    "Experience in code refactoring, performance optimization, and process automation.",
+    "Passionate about emerging technologies and software architecture, I aim to combine technical excellence with business impact in every project.",
   ],
   contact: {
     email: "nmaknyim@gmail.com",
