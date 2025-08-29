@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { useLanguage } from "../../context/LanguageContext";
 import cvDataFr from "@data/cvData.fr";
 import cvDataEn from "@data/cvData.en";
@@ -7,6 +7,8 @@ import sectionsEn from "@data/sections.en";
 
 const Experience = () => {
   const [zoomedImg, setZoomedImg] = useState(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentJobImages, setCurrentJobImages] = useState([]);
   const [keyword, setKeyword] = useState("");
 
   const { language } = useLanguage();
@@ -17,6 +19,52 @@ const Experience = () => {
         exp.keywords && exp.keywords.some(k => k.toLowerCase().includes(keyword.toLowerCase()))
       )
     : cvData.experience;
+
+  // Handle keyboard navigation
+  useEffect(() => {
+    const handleKeyPress = (e) => {
+      if (!zoomedImg || currentJobImages.length <= 1) return;
+
+      if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        const newIndex = currentImageIndex > 0 ? currentImageIndex - 1 : currentJobImages.length - 1;
+        setCurrentImageIndex(newIndex);
+        setZoomedImg(currentJobImages[newIndex]);
+      } else if (e.key === "ArrowRight") {
+        e.preventDefault();
+        const newIndex = currentImageIndex < currentJobImages.length - 1 ? currentImageIndex + 1 : 0;
+        setCurrentImageIndex(newIndex);
+        setZoomedImg(currentJobImages[newIndex]);
+      } else if (e.key === "Escape") {
+        e.preventDefault();
+        setZoomedImg(null);
+        setCurrentJobImages([]);
+        setCurrentImageIndex(0);
+      }
+    };
+
+    if (zoomedImg) {
+      document.addEventListener("keydown", handleKeyPress);
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyPress);
+    };
+  }, [zoomedImg, currentImageIndex, currentJobImages]);
+
+  const handleImageClick = (img, jobImages) => {
+    const imageIndex = jobImages.indexOf(img);
+    setCurrentImageIndex(imageIndex);
+    setCurrentJobImages(jobImages);
+    setZoomedImg(img);
+  };
+
+  const handleCloseZoom = () => {
+    setZoomedImg(null);
+    setCurrentJobImages([]);
+    setCurrentImageIndex(0);
+  };
+
   return (
     <div className="space-y-8 bg-white/80 rounded-lg shadow p-8">
       <h2 className="text-2xl font-bold border-b border-gray-200 pb-2 text-left mb-6">
@@ -49,8 +97,8 @@ const Experience = () => {
                       key={i}
                       src={img}
                       alt={`Photo ${i + 1} pour ${job.role} à ${job.company}`}
-                      className="w-64 h-40 object-cover rounded-lg shadow border"
-                      onClick={() => setZoomedImg(`${img}`)}
+                      className="w-64 h-40 object-cover rounded-lg shadow border cursor-pointer"
+                      onClick={() => handleImageClick(img, job.images)}
                     />
                   ))}
                 </div>
@@ -88,17 +136,62 @@ const Experience = () => {
       {zoomedImg && (
         <div
           className="fixed inset-0 backdrop-blur-md flex items-center justify-center z-50 cursor-zoom-out"
-          onClick={() => setZoomedImg(null)}
+          onClick={handleCloseZoom}
         >
-          <img
-            src={zoomedImg}
-            alt="Zoomed project"
-            className="max-w-full max-h-full rounded-lg shadow-lg"
-            onClick={e => e.stopPropagation()} // Prevent closing when clicking the image itself
-          />
+          {/* Left arrow - absolutely positioned */}
+          {currentJobImages.length > 1 && (
+            <button
+              className="fixed left-8 top-1/2 transform -translate-y-1/2 text-white hover:text-blue-300 transition-all duration-300 p-4 rounded-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 shadow-xl border-2 border-white hover:scale-110 hover:shadow-2xl z-50"
+              onClick={(e) => {
+                e.stopPropagation();
+                const newIndex = currentImageIndex > 0 ? currentImageIndex - 1 : currentJobImages.length - 1;
+                setCurrentImageIndex(newIndex);
+                setZoomedImg(currentJobImages[newIndex]);
+              }}
+              aria-label="Previous image"
+            >
+              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+          )}
+
+          <div className="relative flex items-center justify-center max-w-full max-h-full">
+            <img
+              src={zoomedImg}
+              alt="Zoomed project"
+              className="max-w-full max-h-full rounded-lg shadow-lg"
+              onClick={e => e.stopPropagation()}
+            />
+            
+            {/* Image counter */}
+            {currentJobImages.length > 1 && (
+              <div className="absolute bottom-[-60px] left-1/2 transform -translate-x-1/2 bg-black/70 text-white px-3 py-1 rounded-full text-sm">
+                {currentImageIndex + 1} / {currentJobImages.length}
+              </div>
+            )}
+          </div>
+
+          {/* Right arrow - absolutely positioned */}
+          {currentJobImages.length > 1 && (
+            <button
+              className="fixed right-8 top-1/2 transform -translate-y-1/2 text-white hover:text-blue-300 transition-all duration-300 p-4 rounded-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 shadow-xl border-2 border-white hover:scale-110 hover:shadow-2xl z-50"
+              onClick={(e) => {
+                e.stopPropagation();
+                const newIndex = currentImageIndex < currentJobImages.length - 1 ? currentImageIndex + 1 : 0;
+                setCurrentImageIndex(newIndex);
+                setZoomedImg(currentJobImages[newIndex]);
+              }}
+              aria-label="Next image"
+            >
+              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          )}
           <button
             className="absolute top-4 right-4 text-yellow-300 hover:text-red-300 transition-all duration-200 p-3 rounded-full bg-red-600 hover:bg-red-700 shadow-lg border-2 border-white hover:scale-110"
-            onClick={() => setZoomedImg(null)}
+            onClick={handleCloseZoom}
             aria-label="Close"
           >
             <svg 
