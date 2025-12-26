@@ -281,6 +281,21 @@ const cvData = {
       images: ["images/vinyle-1.png", "images/vinyle-2.png", "images/vinyle-3.png", "images/vinyle-4.png", "images/vinyle-5.png"],
       keywords: ["Angular 19", "NestJS", "GraphQL", "Prisma", "PostgreSQL", "Stripe", "Docker"],
     },
+    {
+      name: "Java Quizz Android App",
+      link: [
+        "https://github.com/EdMkn/AndroidAppForQuiz",
+      ],
+      duration: "4 jours",
+      description: [
+        "Une application Android pour gérer un quizz. Elle permet de créer, modifier et supprimer des questions et des réponses, et de gérer le quizz.",
+        "Elle est développée sur Android, et est écrite en Java et utilise Room pour stocker les données.",
+        "Un ficher docker-compose est inclus au projet afin de simuler l'architecture micro-services avec le frontend et le backend séparé",
+        "L'application est rebuildée automatiquement lorsque le code est modifié"
+      ],
+      images: ["images/quizz-1.png", "images/quizz-2.png", "images/quizz-3.png", "images/quizz-4.png"],
+      keywords: ["Java", "Android", "Room", "Quizz", "AndroidAppForQuiz", "Docker", "Microservices", "Gradle", "Kotlin"],
+    },
   ],
   education: [
     {
