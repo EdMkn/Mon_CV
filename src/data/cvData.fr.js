@@ -3,7 +3,7 @@ const cvData = {
   title: "Etudiant en génie logiciel BAC+5| Développeur React/Java ",
   image: "images/profile.png",
   summary: [
-    "Développeur fullstack React/Java en formation d'ingénieur, spécialisé dans la création de solutions web modernes et scalables.",
+    "Développeur fullstack React/Java en formation d'ingénieur, spécialisé dans la création de solutions web modernes et scalables.",   
     "Expérience confirmée en refactorisation de code, optimisation de performances et automatisation de processus.",
     "Passionné par les technologies émergentes et l'architecture logicielle, je cherche à allier excellence technique et impact métier dans chaque projet.",
   ],
@@ -295,6 +295,19 @@ const cvData = {
       ],
       images: ["images/quizz-1.png", "images/quizz-2.png", "images/quizz-3.png", "images/quizz-4.png"],
       keywords: ["Java", "Android", "Room", "Quizz", "AndroidAppForQuiz", "Docker", "Microservices", "Gradle", "Kotlin"],
+    },
+    {
+      name: "RAG Assistant",
+      link: ["https://github.com/EdMkn/rag-assistant"],
+      duration: "",
+      description: [
+        "Un assistant de questions-réponses sur mes propres documents, construit autour d'un pipeline RAG (Retrieval-Augmented Generation). On dépose des documents (PDF, txt, markdown), l'API les indexe, puis on pose des questions dont les réponses sont fondées sur leur contenu, avec les sources citées.",
+        "L'API est développée avec FastAPI, les embeddings et la génération passent par Mistral, et la recherche vectorielle s'appuie sur PostgreSQL avec pgvector. L'orchestration du pipeline est gérée avec LangChain.",
+        "Quand l'information ne figure pas dans les documents, l'assistant l'indique plutôt que d'inventer une réponse. Les réponses sont streamées token par token en SSE.",
+        "L'ensemble est conteneurisé avec Docker Compose, et le projet est couvert par une suite de tests pytest déterministe (sans base de données ni appel API externe).",
+      ],
+      images: [],
+      keywords: ["Python", "FastAPI", "LangChain", "Mistral", "RAG", "pgvector", "Docker"],
     },
   ],
   education: [

@@ -297,6 +297,19 @@ const cvData = {
       images: ["images/quizz-1.png", "images/quizz-2.png", "images/quizz-3.png", "images/quizz-4.png"],
       keywords: ["Java", "Android", "Room", "Quizz", "AndroidAppForQuiz", "Docker", "Microservices", "REST API", "Gradle", "Kotlin"],
     },
+
+    {
+      name: "RAG Assistant",
+      link: ["https://github.com/EdMkn/rag-assistant"],
+      duration: "1 week",
+      description: [
+        "An assistant for asking questions about my own documents, built around a RAG (Retrieval-Augmented Generation) pipeline. You drop in documents (PDF, txt, markdown), the API indexes them, and you then ask questions whose answers are grounded in their content, with the sources cited.",
+        "The API is built with FastAPI, embeddings and generation go through Mistral, and vector search relies on PostgreSQL with pgvector. The pipeline orchestration is handled with LangChain.",
+        "When the information isn't in the documents, the assistant says so instead of inventing an answer. Responses are streamed token by token over SSE.",
+        "The whole thing is containerized with Docker Compose, and the project is covered by a deterministic pytest suite (no database or external API calls).",],
+      images: [],
+      keywords: ["Python", "FastAPI", "LangChain", "Mistral", "RAG", "pgvector", "Docker"],
+    },
   ],
   education: [
     {
